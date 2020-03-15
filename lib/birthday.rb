@@ -13,10 +13,12 @@ end
 def age_appropriate_birthday(birthday_kids)
   
    birthday_kids.each do |kids_name, age| 
-     if kids_name["Timmy"] || kids_name["Sarah"]
-    puts "Happy Birthday #{kids_name}! You are now #{age} years old!"
-  else
-   puts nil
+    if kids_name["Timmy"]
+        puts "Happy Birthday #{kids_name}! You are now #{age} years old!"
+    elsif kids_name["Sarah"]
+        puts "Happy Birthday #{kids_name}! You are now #{age} years old!"
+    else
+        puts nil
 end
 end
 end
